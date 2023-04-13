@@ -74,12 +74,12 @@ html {
   background-color: #f56d91;
 }
 .container-text {
-  width: 30%;
-  height: 20vh;
+  width: 50%;
+  height: 40vh;
   background-color: #dfdfde;
 }
 .container-img img {
-  width: 100px;
+  width: 50%;
   height: 100px;
 }
 .paletas {
