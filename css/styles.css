@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-size: calc(0.5em + 0.5vw);
+  background-color: #dfdfde;
+}
+/* LISTA DE NAVABAR */
+.lista-bootstrap {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  border: solid rgb(204, 162, 162) 2px;
+}
+
+.lista-bootstrap li {
+  color: #f9f8f7;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lista-bootstrap li a {
+  /* background-color: #f56d91; */
+  color: #f9f8f7;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #dfdfde 2px;
+}
+.lista-bootstrap li a.active {
+  background-color: #f56d91;
+}
+.lista-bootstrap li a:hover {
+  background-color: #f56d91;
+  border: solid #dfdfde 2px;
+}
+.img-carrusel {
+  position: relative;
+  height: 80vh;
+}
+.img-carrusel::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(189, 189, 209, 0.5), rgb(5, 5, 0.9));
+}
+.img-carrusel img {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.paletas {
+  background-color: #8d8daa;
+  color: #8d8daa;
+  background-color: #dfdfde;
+  color: #dfdfde;
+  background-color: #f56d91;
+  color: #f56d91;
+  background-color: #dfdfde;
+  color: #dfdfde;
+  background-color: #434343;
+  color: #434343;
+}
