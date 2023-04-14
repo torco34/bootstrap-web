@@ -1,23 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   box-sizing: border-box;
-  font-family: "Work Sans";
+
   margin: 0;
   padding: 0;
 }
 body {
+  scroll-behavior: smooth;
+  background-color: #dfdfde;
+  font-size: calc(2em + 2vw);
+  font-family: "Roboto", sans-serif;
 }
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
-  font-size: calc(0.5em + 0.5vw);
-  background-color: #dfdfde;
 }
 /* LISTA DE NAVABAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
 .lista-bootstrap {
   width: 60%;
   display: flex;
   align-items: center;
-  border: solid rgb(204, 162, 162) 2px;
 }
 
 .lista-bootstrap li {
@@ -28,19 +36,20 @@ html {
   justify-content: center;
 }
 .lista-bootstrap li a {
-  /* background-color: #f56d91; */
-  color: #f9f8f7;
-  width: 60%;
+  color: #79b4b7;
+  font-size: 2rem;
+  margin-left: 2rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid #dfdfde 2px;
+  border: solid #79b4b7 2px;
 }
 .lista-bootstrap li a.active {
-  background-color: #f56d91;
+  background-color: #79b4b7;
 }
 .lista-bootstrap li a:hover {
-  background-color: #f56d91;
+  background-color: #79b4b7;
   border: solid #dfdfde 2px;
 }
 .img-carrusel {
@@ -63,32 +72,80 @@ html {
   overflow: hidden;
   object-fit: cover;
 }
-/* SECTION COLOR */
-.container-sectio {
+/* SECTION COLOR FORMULARIO */
+
+.container-form .row-center-form {
+  /* border: solid 2px #6df574; */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-  height: 50vh;
-  background-color: #f56d91;
+  padding: 3rem;
+  width: 90%;
 }
-.container-text {
-  width: 50%;
-  height: 40vh;
-  background-color: #dfdfde;
+
+/* dentro input */
+.form-control {
+  color: #24a19c;
+  border: solid 1px #24a19c;
+  font-size: 2rem;
 }
-.container-img img {
-  width: 50%;
+.form-check-input {
+  background-color: #24a19c;
+}
+.container-form .form-control::placeholder {
+  color: #24a19c;
+  font-size: 1.5rem;
+}
+.container-form .row-center-form button:hover {
+  background-color: #f9f9f9;
+  color: #24a19c;
+  font-size: 2rem;
+}
+.row-center-form div {
   height: 100px;
+  /* border: solid 2px #e6c0ca; */
 }
-.paletas {
-  background-color: #8d8daa;
-  color: #8d8daa;
-  background-color: #dfdfde;
+.container-form .row-center-form button {
+  text-align: center;
+  width: 100%;
   color: #dfdfde;
-  background-color: #f56d91;
-  color: #f56d91;
+  margin-top: 10px;
+  font-size: 2rem;
+  background-color: #24a19c;
+}
+.container-form .row-center-form label {
+  font-size: 2rem;
+}
+/* bloque donde va el form */
+.container-form {
+  position: relative;
+  /* border: solid 2px #d3083b; */
+  padding: 2rem;
+  top: -20rem;
+  font-size: 2rem;
+  background-color: rgb(249, 249, 249, 0.9);
+  color: #24a19c;
+  z-index: 5;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-form .row-center-form h2 {
+  /* border: solid 2px #f56d91; */
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+/* SECTION DE IMGEN I BLOQUE VERDE */
+
+.colores-paleta {
+  background-color: #24a19c;
+  color: #24a19c;
+  background-color: #79b4b7;
+  color: #79b4b7;
+  background-color: #f9f9f9;
+  color: #f9f9f9;
   background-color: #dfdfde;
   color: #dfdfde;
   background-color: #434343;
