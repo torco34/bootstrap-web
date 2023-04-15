@@ -9,7 +9,7 @@
     <title>Bootstrap</title>
   </head>
   <body class="img-fondo">
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
         <h1></h1>
         <button
@@ -45,15 +45,16 @@
             </li>
           </ul>
         </div>
+        <a href="inicio.html">Iniciar sesión</a>
       </div>
     </nav>
-    <!-- SECTION CARRUSEL -->
+    <!-- SECTION C A R R U S E L -->
     <section class="img-carrusel">
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
@@ -61,32 +62,51 @@
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/carrusel1.jpg" class="d-block" alt="..." />
+            <img src="./img/carrusel3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>El scroll de bootstrap</h2>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/carrusel2.jpg" class="d-block" alt="..." />
+            <img src="./img/carrusel2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>El scroll de bootstrap</h2>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/carrusel3.jpg" class="d-block" alt="..." />
+            <img src="./img/carrusel1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>El scroll de bootstrap</h2>
+              <hr />
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
           </div>
         </div>
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -95,7 +115,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -103,10 +123,10 @@
         </button>
       </div>
     </section>
-    <!-- CONTAINER IMAGENES -->
+    <!-- CONTAINER I M A G E N E S -->
     <section class="container-imagen">
       <div class="row container-div-texto">
-        <div class="col-6">
+        <div class="col-3">
           <div class="text-grid1">
             <div>
               <h2>Utilizando la grid de bootstrap</h2>
@@ -123,6 +143,42 @@
             </div>
           </div>
         </div>
+        <div class="col-3">
+          <div class="text-grid1">
+            <div>
+              <h2>Utilizando la grid de bootstrap</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                magni alias quaerat maxime illo. Nisi cum sit a ex repellendus
+                nemo, vitae autem nam molestiae similique ut, inventore alias?
+                Facilis? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Id magni alias quaerat maxime illo. Nisi cum sit a ex
+                repellendus nemo, vitae autem nam molestiae similique ut,
+                inventore alias? Facilis?
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-3">
+          <div class="text-grid1">
+            <div>
+              <h2>Utilizando la grid de bootstrap</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                magni alias quaerat maxime illo. Nisi cum sit a ex repellendus
+                nemo, vitae autem nam molestiae similique ut, inventore alias?
+                Facilis? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Id magni alias quaerat maxime illo. Nisi cum sit a ex
+                repellendus nemo, vitae autem nam molestiae similique ut,
+                inventore alias? Facilis?
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- nueva columna de bootstrap -->
         <div class="col-6">
           <div class="text-grid2">
             <h2>utilizando la grid de bootstrap</h2>
@@ -138,7 +194,19 @@
         </div>
       </div>
     </section>
-    <!-- SECTION DE IMÁGENES CON MODAL -->
+    <!-- TEXTO DE IMAGE MODAL -->
+    <section class="texto-narrativo-modal">
+      <div class="conainer-text">
+        <h2>En este bloque uso las modales de Bootstrap</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quasi
+          eveniet, accusantium iste eaque quaerat aspernatur itaque ea voluptate
+          exercitationem odio alias qui necessitatibus commodi dicta!
+          Necessitatibus sint vero voluptatum?
+        </p>
+      </div>
+    </section>
+    <!-- SECTION DE I M Á G E N E S C O N M O D A L -->
     <section class="container-img">
       <div class="row container-row">
         <div class="col-3">
