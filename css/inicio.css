@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .imagen-fondo-inicio {
   background-image: url("../img/verde.jpg");
   height: 100vh;
@@ -11,43 +14,49 @@
   align-items: center;
   justify-content: center;
   background-color: var(--amartillo);
-  /* opacity: 0.8; */
   top: 0;
   right: 0;
 }
-.container-fondo {
+.imagen-fondo-inicio::before {
+  content: "";
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 66.4%;
-  height: 100vh;
-  background-image: linear-gradient(#14161a, #f1eaea);
+  right: 0;
+  background-image: linear-gradient(#13151a, #dbcfcf);
   opacity: 0.7;
 }
-.container-fondo h2 {
-  position: relative;
-  font-size: 60px;
-  font-weight: bold;
-  z-index: 1;
+h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  line-height: 45px;
+  color: #ddd;
+  font-size: calc(0.8em + 0.8vw);
   color: var(--amartillo);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+
 }
-.container-fondo h3 {
-  font-size: 30px;
-  /* font-weight: bold; */
+h3 {
+  position: relative;
+  font-size: calc(0.5em + 0.5vw);
+ 
+  margin-top: 10rem;
+  z-index: 1;
+  padding: 2rem;
   color: var(--blanco);
 }
 /* este es el modal */
-.linea {
-  position: relative;
-  background-color: var(--amartillo);
-  height: 7px;
-  z-index: 1;
-}
+
 body {
   overflow-x: hidden;
+  font-size: calc(1em + 1vw);
+  font-family: "Roboto", sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -63,7 +72,6 @@ html {
 .inicio-nav {
   display: grid;
   flex-direction: column;
-  /* background-color: #66bfbf; */
   background-color: var(--beige);
   width: 100%;
   height: 100vh;
@@ -76,12 +84,13 @@ html {
 .banier {
   display: flex;
   padding: 10px;
-  width: 600px;
+  width: 100%;
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+ 
 }
 .banier button {
   width: 60%;
@@ -90,11 +99,12 @@ html {
   font-size: 15px;
   border: solid var(--verde) 2px;
   background-color: var(--blanco);
+  font-size: calc(0.3em + 0.4vw);
+  font-family: "Roboto", sans-serif;
 }
 .banier i {
   position: relative;
   right: 10px;
-  font-size: 20px;
 }
 .google img {
   width: 20px;
@@ -105,12 +115,13 @@ html {
   width: 20px;
   position: relative;
   right: 10px;
+  font-size: calc(0.4em + 0.4vw);
 }
 .parrafo {
   display: flex;
-
-  font-size: 20px;
+  font-size: calc(0.4em + 0.4vw);
   color: var(--verde);
+  font-family: "Roboto", sans-serif;
 }
 .div-flecha i {
   font-size: 25px;
@@ -120,12 +131,16 @@ html {
 /* modal */
 .modal-icono {
   display: flex;
+  font-size: calc(1em + 1vw);
+  font-family: "Roboto", sans-serif;
 }
 .modal-icono i {
-  font-size: 100px;
+  /* font-size: 100px; */
+
   color: var(--negro);
   text-align: center;
   width: 100%;
+  font-size: calc(0.4em + 0.4vw);
 }
 .p input {
   font-size: 20px;
