@@ -402,14 +402,13 @@ h2 {
 }
 
 /* SECTION COLOR FORMULARIO */
-.formcion-superior{
+.formcion-superior {
   /* border: solid 2px #6df574; */
   width: 100%;
   background-color: var(--beige);
 }
 
 .container-form .row-center-form {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,18 +454,14 @@ h2 {
 /* bloque donde va el form */
 .container-form {
   position: absolute;
-  /* width: 100%; */
-  /* padding: 2rem; */
-  /* margin-top: 40rem; */
   font-size: 2rem;
-  /* background-color: rgba(211, 48, 48, 0.9); */
   color: #24a19c;
   z-index: 5;
   height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 5px #b12f52;
+ 
 }
 .container-form .row-center-form h2 {
   margin-bottom: 2rem;
@@ -477,8 +472,29 @@ h2 {
 }
 /* SECTION DE FOOTER */
 .conaitainer-foter {
-  margin-top: 70rem;
-  background-color: #1b1a1a;
-  /* height: 100vh; */
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f9f8f7;
+  background-color: #302525;
+  height: 100vh;
+}
+.container-texto p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  top: 200px;
+  font-size: 18px;
+}
+.div-iconos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-iconos a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 38px;
+  margin: 12px;
 }
