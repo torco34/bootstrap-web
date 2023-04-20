@@ -15,6 +15,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 :root {
   --verde: #79b4b7;
@@ -24,18 +25,53 @@ html {
   --amartillo: #f8f0df;
 }
 /* beis color veis  */
+/* BUTTON SUBIR BAJAR */
+.container-boton {
+  position: fixed;
+  background-color: #8fbbb9;
+  z-index: 1;
+  right: 0;
+  border: 1px solid #ddd;
+  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
+  border-radius: 10%;
+  height: auto;
+  align-items: center;
+  line-height: 22px;
+  height: 70px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  display: none;
+}
+.container-boton i {
+  display: block;
+  font-size: 27px;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 7px;
+  color: var(--blanco);
+}
+
 /* LISTA DE NAVABAR */
 .navbar {
   position: fixed;
+  bottom: 10;
+
   width: 100%;
   top: 0px;
   z-index: 5;
-  /* background-color: #1e878d; */
+  background-color: var(--amartillo);
 }
+
 .lista-bootstrap {
   width: 100%;
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
   align-items: center;
   font-family: "Bebas Neue", cursive;
   background-color: var(--amartillo);
@@ -388,22 +424,10 @@ h2 {
   font-size: 20px;
   color: #f9f9f9;
 }
-.colores-paleta {
-  background-color: #66bfbf;
-  color: #66bfbf;
-  background-color: #eaf6f6;
-  color: #eaf6f6;
-  background-color: #f9f9f9;
-  color: #f9f9f9;
-  background-color: #ffffff;
-  color: #ffffff;
-  background-color: #ff0063;
-  color: #ff0063;
-}
 
 /* SECTION COLOR FORMULARIO */
 .formcion-superior {
-  /* border: solid 2px #6df574; */
+ 
   width: 100%;
   background-color: var(--beige);
 }
@@ -456,12 +480,10 @@ h2 {
   position: absolute;
   font-size: 2rem;
   color: #24a19c;
-  z-index: 5;
   height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 .container-form .row-center-form h2 {
   margin-bottom: 2rem;

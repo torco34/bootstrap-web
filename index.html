@@ -14,9 +14,8 @@
     <title>Bootstrap</title>
   </head>
   <body class="img-fondo">
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
-        <h1></h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,23 +29,23 @@
         </button>
         <div
           class="container collapse navbar-collapse"
-          id="navbarTogglerDemo02"
+          id="navbarTogglerDemo02 "
         >
           <ul class="navbar-nav lista-bootstrap p-2">
             <li class="nav-item">
-              <a class="color btn active" href="#">Home</a>
+              <a class="color btn active" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="color btn" href="#">Galería</a>
+              <a class="color btn" href="#menu">Reseta</a>
             </li>
             <li class="nav-item">
-              <a class="color btn" href="#habilidades">Sobre</a>
+              <a class="color btn" href="#galeria">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="color btn" href="#portafolio">Contactos</a>
+              <a class="color btn" href="#nutricio">Nutrición</a>
             </li>
             <li class="nav-item">
-              <a class="color btn" href="#">contesta</a>
+              <a class="color btn" href="#contacto"> Conctacto</a>
             </li>
             <li class="nav-item">
               <a class="color btn botonSesion" href="./inicio.html">
@@ -56,10 +55,11 @@
           </ul>
         </div>
       </div>
-      <div class="sesion"></div>
+      <div id="home" class="sesion"></div>
     </nav>
+
     <!-- SECTION C A R R U S E L -->
-    <section class="img-carrusel">
+    <section id="di" class="img-carrusel">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -89,7 +89,8 @@
             <div class="carousel-caption d-none d-md-block">
               <h2>Una alimentación sana y equilibrada</h2>
               <p>
-                Productos de belleza cosmética natural, accesorios de belleza y
+                Estos son los 4 pilares principales para llevar una vida
+                saludable
               </p>
             </div>
           </div>
@@ -134,7 +135,19 @@
         </button>
       </div>
     </section>
-    <section class="container-bienvenidad">
+    <!-- SECTION B O T O N -->
+    <section>
+      <div id="buton" class="container-boton">
+        <a href="#di">
+          <i class="bi bi-arrow-up-circle"></i>
+        </a>
+
+        <a href="#foter">
+          <i class="bi bi-arrow-down-circle"></i>
+        </a>
+      </div>
+    </section>
+    <section id="menu" class="container-bienvenidad">
       <div class="container">
         <div class="row container-row-textos">
           <div class="col-md-4">
@@ -239,7 +252,7 @@
       </div>
     </section>
     <!-- TEXTO DE IMAGE MODAL -->
-    <section class="texto-narrativo">
+    <section id="galeria" class="texto-narrativo">
       <div class="row">
         <div class="col">
           <div class="container conainer-text">
@@ -324,7 +337,7 @@
       </div>
     </section>
     <!-- SECTION DE TEXTO  -->
-    <section class="texto-narrativo">
+    <section id="nutricio" class="texto-narrativo">
       <div class="row">
         <div class="col">
           <div class="container conainer-text">
@@ -398,7 +411,7 @@
       </div>
     </section>
     <!-- texto -->
-    <section class="texto-narrativo">
+    <section id="contacto" class="texto-narrativo">
       <div class="row">
         <div class="col">
           <div class="container conainer-text">
@@ -456,7 +469,7 @@
       --
     </section>
     <!-- section footer -->
-    <footer class="conaitainer-foter">
+    <footer id="foter" class="conaitainer-foter">
       <div class="row">
         <div class="div-iconos col-md-6">
           <div class="">
@@ -488,5 +501,6 @@
       </div>
     </footer>
     <script src="./bootstrap-5/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
