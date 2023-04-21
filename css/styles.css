@@ -61,7 +61,6 @@ html {
 .navbar {
   position: fixed;
   bottom: 10;
-
   width: 100%;
   top: 0px;
   z-index: 5;
@@ -129,7 +128,7 @@ html {
 }
 .img-carrusel h2 {
   position: relative;
-  font-size: 10rem;
+
   z-index: 1;
   font-size: 5rem;
   font-weight: bold;
@@ -173,7 +172,7 @@ html {
   justify-content: center;
 }
 .container-row-textos h2 {
-  font-size: 5rem;
+  font-size: calc(0.5em + 0.5vw);
   font-weight: bold;
   font-family: "Bebas Neue", cursive;
 }
@@ -210,7 +209,7 @@ html {
 }
 
 .container-div-texto .text-grid1 p {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   padding: 20px;
   line-height: 22px;
   font-size: calc(0.2em + 0.2vw);
@@ -219,7 +218,8 @@ html {
 .container-div-texto .text-grid1 h2 {
   font-size: 2rem;
   padding: 20px 10px;
-  font-family: "Righteous";
+  line-height: 18px;
+  font-family: "Bebas Neue", cursive;
   font-weight: bold;
   left: 16px;
 }
@@ -239,15 +239,14 @@ html {
 }
 /* lado texto 2 */
 .container-div-texto .text-grid2 p {
-  font-size: 2rem;
   padding: 20px;
   line-height: 22px;
   font-size: calc(0.2em + 0.2vw);
 }
 .container-div-texto .text-grid2 h2 {
-  font-size: 2rem;
-  padding: 50px 30px;
-  font-family: "Righteous";
+  /* font-size: calc(0.5em + 0.5vw); */
+  padding: 20px 10px;
+  font-family: "Bebas Neue", cursive;
   font-weight: bold;
   left: 16px;
 }
@@ -264,15 +263,17 @@ html {
   height: 60vh;
 }
 .conainer-text h2 {
-  font-size: 5rem;
+  /* font-size: 5rem; */
   padding: 20px 10px;
-  font-family: "Bebas Neue", cursive;
+  /* font-size: calc(0.5em + 0.5vw); */
   font-weight: bold;
   left: 1rem;
+  font-family: "Bebas Neue", cursive;
 }
 .conainer-text p {
   font-size: 3rem;
-  font-family: "Righteous";
+  /* font-family: "Righteous"; */
+  font-family: "Roboto", sans-serif;
   padding-left: 3rem;
   line-height: 35px;
   font-size: calc(0.4em + 0.4vw);
@@ -398,10 +399,12 @@ h2 {
   position: relative;
   padding: 2rem;
 }
-.div-form-h2 h2 {
-  font-size: 3rem;
-  font-family: "Righteous";
+.row-center-form h2 {
+  /* font-size: 3rem; */
+  /* font-family: "Bebas Neue", cursive; */
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: calc(0.5em + 0.5vw);
   /* border: solid 2px rgb(163, 110, 110); */
 }
 .input {
@@ -428,6 +431,7 @@ h2 {
 /* SECTION COLOR FORMULARIO */
 .formcion-superior {
   width: 100%;
+
   background-color: var(--beige);
 }
 
@@ -435,8 +439,11 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
-  width: 70%;
+  padding: 2rem;
+  width: 100%;
+  font-size: calc(0.2em + 0.2vw);
+  /* height: 50vh; */
+  /* border: solid 2px red; */
   background-color: var(--amartillo);
 }
 
@@ -444,7 +451,7 @@ h2 {
 .form-control {
   color: #24a19c;
   border: solid 1px #24a19c;
-  font-size: 2rem;
+  font-size: calc(0.5em + 0.5vw);
   background-color: var(--blanco);
 }
 .form-check-input {
@@ -453,15 +460,18 @@ h2 {
 .container-form .form-control::placeholder {
   color: #24a19c;
   font-size: 1.5rem;
+  padding: 2rem;
+  border: solid 2px red;
 }
 .container-form .row-center-form button:hover {
   background-color: #f9f9f9;
   color: #24a19c;
   font-size: 2rem;
+  border: solid 2px red;
 }
 .row-center-form div {
-  height: 10vh;
-  /* border: solid 2px #e6c0ca; */
+  height: 20vh;
+  border: solid 2px #e6c0ca;
 }
 .container-form .row-center-form button {
   text-align: center;
@@ -478,8 +488,9 @@ h2 {
 .container-form {
   position: absolute;
   font-size: 2rem;
-  color: #24a19c;
-  height: 35vh;
+
+  color: var(--verde);
+  padding: 40px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -489,7 +500,7 @@ h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: "Righteous";
+  font-family: "Bebas Neue", cursive;
 }
 /* SECTION DE FOOTER */
 .conaitainer-foter {
