@@ -48,7 +48,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   margin-top: 10rem;
   z-index: 1;
-  padding: 2rem;
+  padding: rem;
   color: var(--blanco);
 }
 /* este es el modal */
