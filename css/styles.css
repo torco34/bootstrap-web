@@ -349,6 +349,7 @@ html {
 .overlay p,
 h2 {
   font-size: 3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 /* GALERIS DE IMAGENS */
@@ -431,7 +432,6 @@ h2 {
 /* SECTION COLOR FORMULARIO */
 .formcion-superior {
   width: 100%;
-
   background-color: var(--beige);
 }
 
@@ -442,8 +442,6 @@ h2 {
   padding: 2rem;
   width: 100%;
   font-size: calc(0.2em + 0.2vw);
-  /* height: 50vh; */
-  /* border: solid 2px red; */
   background-color: var(--amartillo);
 }
 
@@ -451,6 +449,7 @@ h2 {
 .form-control {
   color: #24a19c;
   border: solid 1px #24a19c;
+  padding: 1rem;
   font-size: calc(0.5em + 0.5vw);
   background-color: var(--blanco);
 }
@@ -461,23 +460,21 @@ h2 {
   color: #24a19c;
   font-size: 1.5rem;
   padding: 2rem;
-  border: solid 2px red;
 }
 .container-form .row-center-form button:hover {
   background-color: #f9f9f9;
   color: #24a19c;
   font-size: 2rem;
-  border: solid 2px red;
+  border: solid 1px #24a19c;
 }
 .row-center-form div {
-  height: 20vh;
-  border: solid 2px #e6c0ca;
+  padding: 2rem;
 }
 .container-form .row-center-form button {
   text-align: center;
   width: 100%;
   color: #dfdfde;
-  margin-top: 10px;
+  margin-top: 2rem;
   font-size: 2rem;
   background-color: #24a19c;
 }
@@ -503,27 +500,61 @@ h2 {
   font-family: "Bebas Neue", cursive;
 }
 /* SECTION DE FOOTER */
+footer {
+  background-color: #302525;
+  position: relative;
+  top: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.container-iconos h2 {
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+}
+.line-nambre {
+  background-color: #dee6e6;
+  height: 5px;
+  width: 50%;
+}
+.container-text1 p {
+  font-size: 2rem;
+  padding: 50px 40px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+}
+.container-text1 h2 {
+  font-size: 2rem;
+  padding: 30px 60px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+}
 .conaitainer-foter {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #f9f8f7;
-  background-color: #302525;
-  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
-.container-texto p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffff;
-  top: 200px;
-  font-size: 18px;
+.container-text2 p {
+  font-size: 2rem;
+  padding: 50px 40px;
+  line-height: 22px;
 }
-.div-iconos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container-text2 h2 {
+  font-size: 2rem;
+  padding: 30px 20px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
 }
+
 .div-iconos a {
   text-decoration: none;
   color: #ffff;
