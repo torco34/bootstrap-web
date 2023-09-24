@@ -63,11 +63,10 @@ html {
 }
 
 :root {
-  --verde: #79b4b7;
-  --negro: #434242;
+  --verde: #ff6969;
+  --negro: #141e46;
   --beige: #fefbf3;
   --blanco: #ffffff;
-  --amartillo: #f8f0df;
 }
 .inicio-nav {
   display: grid;
